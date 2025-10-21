@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Section</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2 class="logo">Creativo</h2>
+      <ul>
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+        <li class="active">📁 Add Section</li>
+      </ul>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h2>Add New Section</h2>
+      </header>
+
+      <section class="content">
+        <form id="sectionForm">
+          <input type="text" id="sectionName" placeholder="Section Name" required>
+          <textarea id="sectionDesc" placeholder="Description"></textarea>
+          <button type="submit">Add Section</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <h3>Add Subcategory</h3>
+        <form id="subForm">
+          <select id="sectionSelect"></select>
+          <input type="text" id="subName" placeholder="Subcategory Name" required>
+          <button type="submit">Add Subcategory</button>
+        </form>
+
+        <div id="sectionList"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- External JS -->
+  <script src="js/add-section.js"></script>
+</body>
+</html>
